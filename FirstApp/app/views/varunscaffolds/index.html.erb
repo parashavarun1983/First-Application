@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Varunscaffolds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @varunscaffolds.each do |varunscaffold| %>
+      <tr>
+        <td><%= link_to 'Show', varunscaffold %></td>
+        <td><%= link_to 'Edit', edit_varunscaffold_path(varunscaffold) %></td>
+        <td><%= link_to 'Destroy', varunscaffold, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Varunscaffold', new_varunscaffold_path %>

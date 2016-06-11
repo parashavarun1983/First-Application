@@ -1,0 +1,2 @@
+module VarunscaffoldsHelper
+end
