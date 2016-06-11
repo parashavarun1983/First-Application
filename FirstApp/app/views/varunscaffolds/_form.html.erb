@@ -1,0 +1,17 @@
+<%= form_for(@varunscaffold) do |f| %>
+  <% if @varunscaffold.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@varunscaffold.errors.count, "error") %> prohibited this varunscaffold from being saved:</h2>
+
+      <ul>
+      <% @varunscaffold.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
